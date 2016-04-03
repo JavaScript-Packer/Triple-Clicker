@@ -1,0 +1,22 @@
+{
+  "name": "Triple Click",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Triple Click to get back to the top of the page. Google Chrome Extension",
+  "homepage_url": "http://www.whak.com/",
+  "permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+    "https://*/*",
+    "http://*/*"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ]
+}
